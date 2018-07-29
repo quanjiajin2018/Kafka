@@ -1,6 +1,7 @@
 package com.qjj.kafka;
 
 import org.apache.kafka.clients.producer.KafkaProducer;
+import org.apache.kafka.clients.producer.ProducerRecord;
 
 import java.util.Properties;
 
@@ -28,10 +29,10 @@ public class CostomProducer {
 
         KafkaProducer<String,String> producerv = new KafkaProducer<String, String>(props);
         for (int i = 0 ; i<50 ;i++){
-
+        	producerv.send(new ProducerRecord<String, String>("test1", Integer.toString(i)," hello word - " + i));
         }
 
-
+        producerv.close();
 
     }
 
