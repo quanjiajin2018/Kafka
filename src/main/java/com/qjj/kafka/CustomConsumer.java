@@ -15,7 +15,7 @@ public class CustomConsumer {
 
         props.put("bootstrap.servers" , "hadoop102:9092");
 
-        props.put("group.id","g1");
+        props.put("group.id","g3");
 
         props.put("enable.auto.commit","true");
 
