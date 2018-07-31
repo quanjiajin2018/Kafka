@@ -15,7 +15,7 @@ public class CostomProducer {
         //等待所有副本节点的内容
         props.put("acks","all");
         //消息发送最大尝试次数
-        props.put("retries",4);
+        props.put("retries",5);
         //一批消息处理大小
         props.put("batch.size",16384);
         //请求延时

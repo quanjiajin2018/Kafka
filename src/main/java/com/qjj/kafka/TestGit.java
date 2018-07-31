@@ -5,6 +5,5 @@ public class TestGit {
         System.out.println("1223");
         System.out.println("123");
         System.out.println("3334");
-        System.out.println("444");
     }
 }
